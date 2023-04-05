@@ -4,5 +4,5 @@
     <active>true</active>
     <errorConditionFormula>NOT(ISPICKVAL(Status, &apos;Matriculado(102)&apos;))</errorConditionFormula>
     <errorDisplayField>AssetServicedById</errorDisplayField>
-    <errorMessage>El estado debe ser Matriculado para el activo (prueba de c</errorMessage>
+    <errorMessage>El estado debe ser Matriculado para el activo (prueba daaae c</errorMessage>
 </ValidationRule>
