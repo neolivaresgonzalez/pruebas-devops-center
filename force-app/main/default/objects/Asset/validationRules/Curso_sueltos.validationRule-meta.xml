@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Curso_sueltos</fullName>
+    <active>false</active>
+    <errorConditionFormula>IF(ISPICKVAL(Product2.Tipo__c,&apos;Cursos Teleduc&apos;), ISBLANK(Curso_Programado__c), FALSE)</errorConditionFormula>
+    <errorDisplayField>Curso_Programado__c</errorDisplayField>
+    <errorMessage>Favor de agregar la Versión de Curso.</errorMessage>
+</ValidationRule>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>verificar_estado_matriculado_en_activo</fullName>
+    <active>true</active>
+    <errorConditionFormula>NOT(ISPICKVAL(Status, &apos;Matriculado(102)&apos;))</errorConditionFormula>
+    <errorDisplayField>AssetServicedById</errorDisplayField>
+    <errorMessage>El estado debe ser Matriculado para el activo (prueba dse c</errorMessage>
+</ValidationRule>
