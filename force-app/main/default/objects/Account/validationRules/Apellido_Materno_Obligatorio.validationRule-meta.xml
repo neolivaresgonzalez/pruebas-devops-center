@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Apellido_Materno_Obligatorio</fullName>
+    <active>false</active>
+    <errorConditionFormula>AND(
+    OR(
+		ISBLANK(Apellido_Materno__c),
+        ISNULL(Apellido_Materno__c)
+	),
+	OR(
+        ISPICKVAL(Pais_Documento_Matricula__c, &apos;Argentina&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;Alemania&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;Belice&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;Francia&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;Guatemala&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;Polonia&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;República Dominicana&apos;),
+		ISPICKVAL(Pais_Documento_Matricula__c, &apos;Suecia&apos;)
+	)
+)</errorConditionFormula>
+    <errorDisplayField>Apellido_Materno__c</errorDisplayField>
+    <errorMessage>Valor requerido (Cambio hecho desde WI-000004)</errorMessage>
+</ValidationRule>
